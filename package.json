@@ -1,0 +1,19 @@
+{
+  "name": "phyastra",
+  "version": "1.0.0",
+  "description": "Physics library for Astra Solaris",
+  "main": "phyastra.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SEscobedo/PhyAstra.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Salvador D. Escobedo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SEscobedo/PhyAstra/issues"
+  },
+  "homepage": "https://github.com/SEscobedo/PhyAstra#readme"
+}
