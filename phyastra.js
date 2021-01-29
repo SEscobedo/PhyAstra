@@ -8,7 +8,11 @@ const defaultParams = {
     s : -0.35635438,
     f : 38.35125000,
     L0 :  34.33479152,
-    Ldot : 3034.90371757
+    Ldot : 3034.90371757,
+    p : 0,
+    W : 0,
+    i : 0,
+    e : 0
 }
 
 function GetPlanetPosition(OrbitalParameters = defaultParams, JulianDate){
@@ -30,6 +34,11 @@ function GetPlanetPosition(OrbitalParameters = defaultParams, JulianDate){
     + b * Math.pow(tCenturiesFromJ2000, 2)
     + c * Math.cos(f * tCenturiesFromJ2000)
     + s * Math.sin(f * tCenturiesFromJ2000);
+
+    const p = OrbitalParameters.p;
+    const W = OrbitalParameters.W;
+    const i = OrbitalParameters.i;
+    const e = OrbitalParameters.e;
 
     var M = L - p // p is the longitude of periapsis
     var w = p - W // W is the longitude of the ascending node
