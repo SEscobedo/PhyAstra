@@ -1,6 +1,6 @@
 {
   "name": "phyastra",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Physics library for Astra Solaris",
   "main": "phyastra.js",
   "repository": {
