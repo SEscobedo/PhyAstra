@@ -15,7 +15,7 @@ const defaultParams = {
     e : 0
 }
 
-function GetPlanetPosition(OrbitalParameters = defaultParams, JulianDate){
+function GetPlanetPosition(OrbitalParameters = defaultParams, JulianDate = 0){
     // month is zero-indexed, so 0 is January
     var tMillisFromJ2000 = Date.now() - Date.UTC(2000, 0, 1, 12, 0, 0);
     var tCenturiesFromJ2000 = tMillisFromJ2000 / (1000 * 60 * 60 * 24 * 365.25 * 100);
